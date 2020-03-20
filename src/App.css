@@ -18,6 +18,7 @@ html{
   font-family:'Londrina Solid', cursive;
   color: white;
   letter-spacing: 2px;
+  user-select: none;
 }
 
 .App-logo {
@@ -28,6 +29,15 @@ html{
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media (max-width:850px){
+  .logocontainer{
+    font-size:40px;
+  }
+  .logocontainer h1{
+    letter-spacing: 0;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
