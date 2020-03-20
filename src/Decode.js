@@ -14,6 +14,7 @@ class Decode extends React.Component{
         }
         this.onHandle = this.onHandle.bind(this)
         this.buttonClick = this.buttonClick.bind(this)
+        this.showAll = this.showAll.bind(this)
     }
 
     onHandle(event){ //takes in events from text input and changes state
@@ -23,6 +24,7 @@ class Decode extends React.Component{
         })
         this.props.updateDecodeText(event.target.value)
         this.props.setShow(false)
+
     }
 
     buttonClick(){ //when decode button is clicked show default attempt, hide shift attempts
@@ -40,12 +42,17 @@ class Decode extends React.Component{
         this.props.setShow(false)
     }
 
+    showAll(){
+        let decodeShift  = encodeShift(this.state.decodeText)
+        this.props.updateCorrectShift(toDecode(decodeShift),this.props.showAll) //sends in callback function
+    }
+
     render(){
         return(
             <div className="decodecontainer">
                 <input className={"inputText"} style={{width:"100%",marginBottom:"50px"}} type ="text" placeholder="Text to decode" onChange={this.onHandle} />
                 <button className="button" onClick={this.buttonClick}>Decode</button>
-                <button className="button" style={{backgroundColor:this.props.show?"":"rgb(223, 70, 70)"}} onClick={this.props.showAll}>{(this.props.show)?"Show All Shifts":"Hide All Shifts"}</button>
+                <button className="button" style={{backgroundColor:this.props.show?"":"rgb(223, 70, 70)"}} onClick={this.showAll}>{(this.props.show)?"Show All Shifts":"Hide All Shifts"}</button>
                 <div style={{display:"flex", justifyContent:"center",paddingTop:"50px"}}>
                     {(this.props.show&&this.state.show)?this.state.defaultAttempt:null}
                 </div>

@@ -24,10 +24,10 @@ class App extends React.Component {
     })
   }
 
-  updateCorrectShift(x){ //to update the shift used to decode the text
+  updateCorrectShift(x,callback){ //to update the shift used to decode the text
     this.setState({
       correctShift:x
-    })
+    },callback)  //callback function calls showAll if sent in with args
   }
 
   
