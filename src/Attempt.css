@@ -1,0 +1,17 @@
+.attempt{
+    border-style: 1px solid;
+    text-align: center;
+    width: 15vw;
+    height:auto;
+    padding-left:10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background-color:rgb(223, 70, 70);
+    margin:10px;
+}
+
+@media (max-width:850px){
+    .attempt{
+        width:76vw;
+    }
+}
