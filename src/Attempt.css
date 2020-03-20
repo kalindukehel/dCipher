@@ -8,6 +8,7 @@
     border-radius: 10px;
     background-color:rgb(223, 70, 70);
     margin:10px;
+    overflow-wrap: break-word;
 }
 
 @media (max-width:850px){

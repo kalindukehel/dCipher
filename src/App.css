@@ -9,6 +9,17 @@ html{
   overflow-y: scroll;
 }
 
+.logocontainer{
+  font-size: 50px;
+  text-align:center;
+}
+
+.logocontainer h1{
+  font-family:'Londrina Solid', cursive;
+  color: white;
+  letter-spacing: 2px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -59,6 +59,9 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <div className="logocontainer">
+          <h1>dCipher</h1>
+        </div>
         <Decode show={!this.state.show} showAll={this.showAll} updateDecodeText={this.updateDecodeText} updateCorrectShift={this.updateCorrectShift} setShow={this.setShow} />
         {this.state.attempts}
       </div>
