@@ -60,7 +60,7 @@ class App extends React.Component {
     return (
       <div>
         <div className="logocontainer">
-          <h1>dCipher</h1>
+          <a rel="noopener noreferrer" target="_blank" style={{textDecoration:"none"}} href="https://github.com/kalindukehel/dCipher/"><h1>dCipher</h1></a>
         </div>
         <Decode show={!this.state.show} showAll={this.showAll} updateDecodeText={this.updateDecodeText} updateCorrectShift={this.updateCorrectShift} setShow={this.setShow} />
         {this.state.attempts}

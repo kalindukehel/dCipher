@@ -1,7 +1,7 @@
 import React from "react"
 import "./Attempt.css"
 class Attempt extends React.Component{
-    render(){
+    render(){ //attempt component which holds an attempt at decrypting text with a given shift
         return(
             <div style ={{backgroundColor:this.props.color}} className="attempt">
                 <h4>Decode shift: {this.props.value}</h4>

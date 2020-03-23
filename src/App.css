@@ -5,6 +5,11 @@ body{
   background-color:rgb(140, 173, 211);
 }
 
+@font-face {
+  font-family: "Londrina Solid";
+  src: url("./fonts/LondrinaSolid-Regular.ttf");
+}
+
 html{
   overflow-y: scroll;
 }
@@ -15,7 +20,7 @@ html{
 }
 
 .logocontainer h1{
-  font-family:'Londrina Solid', cursive;
+  font-family:'Londrina Solid', Times, serif;
   color: white;
   letter-spacing: 2px;
   user-select: none;
