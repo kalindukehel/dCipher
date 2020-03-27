@@ -1,6 +1,6 @@
 {
-  "name": "example",
-  "version": "0.1.0",
+  "name": "dcipher",
+  "version": "1.0.2",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -31,5 +31,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "Webapp created using React to decrypt text that is encrypted with any Caesar cipher shift",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalindukehel/dCipher.git"
+  },
+  "keywords": [
+    "dcipher"
+  ],
+  "author": "Kalindu Kehel Baddarage",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kalindukehel/dCipher/issues"
   }
 }

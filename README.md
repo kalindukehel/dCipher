@@ -2,6 +2,8 @@ Webapp created using React to decrypt text that is encrypted with any Caesar cip
 
 To deploy:
 
+    $ npm install
+
     $ npm start
     
 ![Preview](./preview.gif)
